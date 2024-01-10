@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/signUp.css" />
+    <link rel="stylesheet" href="/font" />
+    <link rel="stylesheet" href="/font1" />
+  </head>
+  <body>
+    <nav id="Navbar">
+      <div id="logo">
+        <a href="/"><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div id="Page-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="btn">
+        <button><a href="#">SIGN UP</a></button>
+      </div>
+    </nav>
+    <section id="content">
+      <form action="" onsubmit="formValid(e)">
+        <h4>Fill the form</h4>
+        <table>
+          <tbody>
+            <tr>
+              <td>First Name :-<input type="text" id="first" /></td>
+              <td>Last Name :-<input type="text" id="last" /></td>
+            </tr>
+            <tr>
+              <td>Mobile :- <input type="text" id="mobile" /></td>
+              <td>Email :- <input type="text" id="email" /></td>
+            </tr>
+            <tr>
+              <td>DOB :- <input type="date" id="dob" /></td>
+              <td>User_ID :- <input type="text" id="uid" /></td>
+            </tr>
+            <tr>
+              <td>
+                Gender :- <input type="radio" id="Male" name="gender" value="M" checked/><label
+                  for="Male"
+                  >M</label
+                ><input type="radio" id="Female" name="gender" value="F"/><label
+                  for="Female"
+                  >F</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="submit">Register</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+    <script>
+      let first = document.getElementById("first");
+      let last = document.getElementById("last");
+      let mobile = document.getElementById("mobile");
+      let email = document.getElementById("email");
+      let dob = document.getElementById("dob");
+      let uid = document.getElementById("uid");
+      let gender=document.querySelectorAll("input[type=radio]")
+      function formValid(e) {
+        console.log(e)
+        console.log(first.value);
+        console.log(last.value);
+        console.log(mobile.value);
+        console.log(email.value);
+        console.log(dob.value);
+        console.log(uid.value);
+        console.log(gender.checked)
+        // alert("The OnSubmit is working ")
+      }
+    </script>
+  </body>
+</html>
