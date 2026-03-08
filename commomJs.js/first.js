@@ -1,2 +1,5 @@
 let {student} = require("./second")
 console.log(student)
+console.log(student)
+console.log("Hello")
+console.log("Hello")
